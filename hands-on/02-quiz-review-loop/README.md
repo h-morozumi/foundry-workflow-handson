@@ -35,13 +35,13 @@ flowchart TD
     Init --> W[quiz-writer<br/>1 問作成]
     W --> R[quiz-reviewer<br/>品質チェック]
     R --> Inc[SetVariable:<br/>TurnCount += 1]
-    Inc --> C{Reviewer の最終発話に<br/>[APPROVED] が含まれる?}
-    C -- Yes --> Done[「問題が完成しました」と返して終了]
+    Inc --> C{"Reviewer の最終発話に<br/>[APPROVED] が含まれる?"}
+    C -- Yes --> Done["「問題が完成しました」と返して終了"]
     Done --> End([EndConversation])
-    C -- No --> Cnt{TurnCount >= 4?}
-    Cnt -- Yes --> Tired[「これ以上は時間切れです」と返して終了]
+    C -- No --> Cnt{"TurnCount >= 4?"}
+    Cnt -- Yes --> Tired["「これ以上は時間切れです」と返して終了"]
     Tired --> End
-    Cnt -- No --> Retry[「指摘事項がある為、もう一度実行します」と返す]
+    Cnt -- No --> Retry["「指摘事項がある為、もう一度実行します」と返す"]
     Retry --> W
 ```
 
