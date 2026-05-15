@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+# Azure Developer CLI (azd) project definition for the Microsoft Foundry hands-on.
+#
+# このリポジトリはアプリケーション コードをデプロイしません。`azd up` (= `azd provision`) で
+# Microsoft Foundry account / project / GPT モデル デプロイメントだけを Bicep で構築します。
+#
+# 参考: https://learn.microsoft.com/azure/developer/azure-developer-cli/azd-schema
+name: foundry-workflow-handson
+metadata:
+  template: foundry-workflow-demo@1.0.0
+infra:
+  provider: bicep
+  path: infra
+  module: main

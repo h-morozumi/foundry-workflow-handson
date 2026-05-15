@@ -1,0 +1,11 @@
+{
+  "aiFoundryAccount": "aif-",
+  "aiFoundryProject": "proj-",
+  "cognitiveServicesAccount": "cog-",
+  "keyVault": "kv-",
+  "logAnalyticsWorkspace": "log-",
+  "applicationInsights": "appi-",
+  "storageAccount": "st",
+  "userAssignedIdentity": "id-",
+  "resourcesResourceGroup": "rg-"
+}

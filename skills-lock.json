@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "microsoft-foundry": {
+      "source": "microsoftdocs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/microsoft-foundry/SKILL.md",
+      "computedHash": "f1ab9285d6905a6f7e4ed0b7b88f7dd8ee6e9ee241617425629348f266d7dc6c"
+    },
+    "update-avm-modules-in-bicep": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/update-avm-modules-in-bicep/SKILL.md",
+      "computedHash": "8071b53c14b949325cb055b69eb44afee07d5166d73ab5799205377880198277"
+    }
+  }
+}
